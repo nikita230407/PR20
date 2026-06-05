@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnToggleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Скрыть/Показать картинку"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnToSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти к свайпам (нажатие)"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnToThird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перейти к скроллу"/>
+
+</LinearLayout>

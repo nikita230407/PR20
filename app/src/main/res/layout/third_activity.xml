@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Элементы управления"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Чекбокс -->
+        <CheckBox
+            android:id="@+id/chkOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Флажок: включить опцию"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Радио-кнопки -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите вариант:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вариант 1"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вариант 2"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <!-- Переключатель -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Переключатель"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ===== МНОГО КОНТЕНТА ДЛЯ СКРОЛЛА ===== -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📜 ПРОКРУТИТЕ ВНИЗ ↓"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Блок 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#E3F2FD"
+            android:text="Блок 1\nПрокручивайте вниз..."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Блок 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#F3E5F5"
+            android:text="Блок 2\nЕщё ниже..."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Блок 3 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#E8F5E9"
+            android:text="Блок 3\nПродолжайте..."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Блок 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FFF3E0"
+            android:text="Блок 4\nПочти у цели!"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Блок 5 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FCE4EC"
+            android:text="Блок 5\nВы почти внизу!"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Кнопка "Назад" -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="← Назад"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Финальный текст -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓ Конец контента!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+</ScrollView>
